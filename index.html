@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>前端开发 Agent Skills 展示</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="header-inner">
+        <p class="eyebrow">Cursor · Agent Skills</p>
+        <h1 class="title" id="page-title">前端开发 Agent Skills</h1>
+        <p class="lede" id="page-subtitle"></p>
+        <p class="hint">
+          本地使用：在项目根目录运行 <code>npx serve .</code> 或 <code>python -m http.server</code> 后访问本页；将
+          <code>skills/</code> 下目录复制到 <code>.cursor/skills/</code> 即可在 Cursor 中启用。
+        </p>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="toolbar">
+        <label class="sr-only" for="filter-cat">按类别筛选</label>
+        <select id="filter-cat" class="select" title="类别">
+          <option value="">全部类别</option>
+        </select>
+        <input
+          type="search"
+          id="filter-q"
+          class="search"
+          placeholder="搜索名称、标签、描述…"
+          autocomplete="off"
+        />
+      </div>
+
+      <section class="grid" id="skill-cards" aria-live="polite"></section>
+    </main>
+
+    <dialog class="modal" id="detail-modal" closedby="any">
+      <div class="modal-panel">
+        <header class="modal-head">
+          <h2 class="modal-title" id="modal-title"></h2>
+          <button type="button" class="modal-close" id="modal-close" aria-label="关闭">×</button>
+        </header>
+        <div class="modal-meta" id="modal-meta"></div>
+        <article class="modal-body prose" id="modal-body"></article>
+      </div>
+    </dialog>
+
+    <footer class="site-footer">
+      <p>
+        技能内容版权归原作者与上游仓库；
+        <a href="https://github.com/anthropics/skills" target="_blank" rel="noopener">anthropics/skills</a>、
+        <a href="https://github.com/vercel-labs/skills" target="_blank" rel="noopener">vercel-labs/skills</a>。
+      </p>
+    </footer>
+
+    <script type="module" src="assets/app.js"></script>
+  </body>
+</html>

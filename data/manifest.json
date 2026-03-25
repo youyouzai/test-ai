@@ -1,0 +1,69 @@
+{
+  "title": "前端开发 Agent Skills",
+  "subtitle": "来自开源生态的 Cursor / Agent 技能包，按类别浏览并阅读 SKILL.md 全文。",
+  "skills": [
+    {
+      "id": "frontend-design",
+      "folder": "frontend-design",
+      "category": "设计与界面",
+      "tags": ["UI", "组件", "布局"],
+      "source": "anthropics/skills",
+      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/frontend-design",
+      "description": "创建有辨识度、可上线级的前端界面，避免千篇一律的「AI 审美」。"
+    },
+    {
+      "id": "canvas-design",
+      "folder": "canvas-design",
+      "category": "设计与界面",
+      "tags": ["Canvas", "生成艺术", "可视化"],
+      "source": "anthropics/skills",
+      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/canvas-design",
+      "description": "使用 Canvas API 与算法生成视觉作品与设计稿。"
+    },
+    {
+      "id": "brand-guidelines",
+      "folder": "brand-guidelines",
+      "category": "设计与界面",
+      "tags": ["品牌", "配色", "排版"],
+      "source": "anthropics/skills",
+      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/brand-guidelines",
+      "description": "在生成界面与物料时遵循一致的品牌与版式规范。"
+    },
+    {
+      "id": "theme-factory",
+      "folder": "theme-factory",
+      "category": "设计与界面",
+      "tags": ["主题", "设计系统", "Token"],
+      "source": "anthropics/skills",
+      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/theme-factory",
+      "description": "构建可复用的配色、字体与组件主题变体。"
+    },
+    {
+      "id": "web-artifacts-builder",
+      "folder": "web-artifacts-builder",
+      "category": "构建与产物",
+      "tags": ["HTML", "产物", "打包"],
+      "source": "anthropics/skills",
+      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder",
+      "description": "将对话中生成的 Web 产物整理为可运行、可分享的构建结果。"
+    },
+    {
+      "id": "webapp-testing",
+      "folder": "webapp-testing",
+      "category": "测试与质量",
+      "tags": ["E2E", "Playwright", "可访问性"],
+      "source": "anthropics/skills",
+      "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/webapp-testing",
+      "description": "为 Web 应用编写与运行端到端测试、快照与基础可访问性检查。"
+    },
+    {
+      "id": "find-skills",
+      "folder": "find-skills",
+      "category": "工具与生态",
+      "tags": ["Skills CLI", "发现", "安装"],
+      "source": "vercel-labs/skills",
+      "sourceUrl": "https://github.com/vercel-labs/skills/tree/main/skills/find-skills",
+      "description": "帮助用户发现、安装与使用开放生态中的 agent skills。"
+    }
+  ]
+}
